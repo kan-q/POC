@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "issue": 
+        "id" : "DSALM-2020 (SUB-TASK-1)"
+    },
+    {
+      "issue": "DSALM-2021 (SUB-TASK-2)"
+    },
+    {
+      "issue": "DSALM-2022 (SUB-TASK-3)"
+    },
+    {
+      "issue": "DSALM-2019 (TASK-1)"
+    },
+    {
+      "issue": "DSALM-2025 (SUB-TASK-5)"
+    },
+    {
+      "issue": "DSALM-2026 (SUB-TASK-6)"
+    },
+    {
+      "issue": "DSALM-2024 (SUB-TASK-4)"
+    },
+    {
+      "issue": "DSALM-2023 (TASK-2)"
+    },
+    {
+      "issue": "DSALM-2018 (HACKATHON-TEST-EPIC)"
+    }
+  ]
+}

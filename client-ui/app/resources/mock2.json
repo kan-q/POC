@@ -1,0 +1,66 @@
+{
+  "issues": [
+    {
+      "id": "DSALM-2020",
+      "description": "(SUB-TASK-1)",
+      "type": "story",
+      "dueDate": "10/10/2017",
+      "priority": "major",
+      "blocker": "false",
+      "dependencies": [
+        {
+          "id": "DSALM-2021",
+          "description": "(SUB-TASK-1)",
+          "type": "sub-task",
+          "dueDate": "10/10/2017",
+          "priority": "major",
+          "blocker": "false",
+          "dependencies": [
+              {
+                "id": "DSALM-2022",
+                "description": "(SUB-TASK-1)",
+                "type": "task",
+                "dueDate": "10/10/2017",
+                "priority": "major",
+                "blocker": "true",
+                "dependencies": [
+
+                ]
+              }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DSALM-2030",
+      "description": "(SUB-TASK-1)",
+      "type": "story",
+      "dueDate": "10/10/2017",
+      "priority": "major",
+      "blocker": "false",
+      "dependencies": [
+        {
+          "id": "DSALM-2021",
+          "description": "(SUB-TASK-1)",
+          "type": "story",
+          "dueDate": "10/10/2017",
+          "priority": "major",
+          "blocker": "false",
+          "dependencies": [
+              {
+                "id": "DSALM-2032",
+                "description": "(SUB-TASK-1)",
+                "type": "story",
+                "dueDate": "10/10/2017",
+                "priority": "major",
+                "blocker": "true",
+                "dependencies": [
+
+                ]
+              }
+          ]
+        }
+      ]
+    }
+  ]
+}
