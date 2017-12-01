@@ -147,7 +147,10 @@
                                       <div class="row">
                                         <div class="col-md-3 panel panel-success panel-heading">{{ issueSub2.id }}</div>
                                         <div class="col-md-3 panel panel-info panel-heading">{{ issueSub2.type }}</div>
-                                        <div class="col-md-3 panel panel-warning panel-heading">{{ issueSub2.blocker }}</div>
+                                        <div class="col-md-3 panel panel-warning panel-heading">
+                                        <p hidden>{{ issueSub2.blocker }}</p>
+                                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                        </div>
                                       </div>
                                   </li>
                               </ul>
