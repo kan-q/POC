@@ -63,3 +63,7 @@
     background-color: cadetblue;
     color: white;
 }
+
+ul {
+  list-style-type: none;
+}
