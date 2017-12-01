@@ -132,23 +132,27 @@
               <ul>
                   <li ng-repeat="issueTop in issues">
                       <div class="row">
-                        <div class="col-md-3 panel panel-success panel-heading">{{ issueTop.id }}</div>
-                        <div class="col-md-3 panel panel-info panel-heading">{{ issueTop.type }}</div>
-                      </div>
-                      
+                        <div class="col-md-3 panel panel-success panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#collapse1">{{ issueTop.id }}:{{ issueTop.description }} {{ issueTop.type }} </a>
+                          </h4>
+                        </div>
+                      </div>  
                       <ul ng-if="issueTop.dependencies">
                           <li ng-repeat="issueSub1 in issueTop.dependencies">
                               <div class="row">
-                                <div class="col-md-3 panel panel-success panel-heading">{{ issueSub1.id }}</div>
-                                <div class="col-md-3 panel panel-info panel-heading">{{ issueSub1.type }}</div>
+                                <div id="collapse1" class="col-md-3 panel panel-success panel-heading">
+                                  <h4 class="panel-title">
+                                    <a data-toggle="collapse" href="#collapse2">{{ issueSub1.id }}:{{ issueSub1.description }}  {{ issueSub1.type }}</a>
+                                  </h4>
+                                </div>
                               </div>
                               <ul ng-if="issueSub1.dependencies">
                                   <li ng-repeat="issueSub2 in issueSub1.dependencies">
                                       <div class="row">
-                                        <div class="col-md-3 panel panel-success panel-heading">{{ issueSub2.id }}</div>
-                                        <div class="col-md-3 panel panel-info panel-heading">{{ issueSub2.type }}</div>
-                                        <div class="col-md-3 panel panel-warning panel-heading">
-                                        <p hidden>{{ issueSub2.blocker }}</p>
+                                        <div id="collapse1" class="col-md-3 panel panel-success panel-heading">
+                                          <a data-toggle="collapse" href="#collapse2">{{ issueSub2.id }}:{{ issueSub2.description }} - <i hidden> {{ issueSub2.blocker }}</i></a>
+                                        </div>
                                         <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
                                         </div>
                                       </div>
